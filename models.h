@@ -4,16 +4,13 @@
 #include <string>
 using namespace std;
 
+struct Player {
 
-struct Game {
-
-    string location;
-    Team home;
-    Team away;
-
+    string name;
+    string team;
+    int position; // 1 thru 5;
 
 };
-
 struct Team {
 
     string name;
@@ -21,13 +18,11 @@ struct Team {
 
 
 };
+struct Game {
 
-
-struct Player {
-
-    string name;
-    string team;
-    int position; // 1 thru 5;
+    string location;
+    Team home;
+    Team away;
 
 };
 
